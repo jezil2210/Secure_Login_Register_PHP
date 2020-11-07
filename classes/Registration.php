@@ -1,28 +1,11 @@
 <?php
 
-/**
- * Class registration
- * handles the user registration
- */
 class Registration
 {
-    /**
-     * @var object $db_connection The database connection
-     */
     private $db_connection = null;
-    /**
-     * @var array $errors Collection of error messages
-     */
     public $errors = array();
-    /**
-     * @var array $messages Collection of success / neutral messages
-     */
     public $messages = array();
 
-    /**
-     * the function "__construct()" automatically starts whenever an object of this class is created,
-     * you know, when you do "$registration = new Registration();"
-     */
     public function __construct()
     {
         if (isset($_POST["register"])) {
@@ -31,7 +14,7 @@ class Registration
     }
 
     /**
-     * handles the entire registration process. checks all error possibilities
+     * checks all error possibilities
      * and creates a new user in the database if everything is fine
      */
     private function registerNewUser()
