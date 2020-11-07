@@ -1,1 +1,2 @@
-# Secure_Login_Register_PHP
+# Secure Login and Register in PHP.
+
